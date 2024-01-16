@@ -27,3 +27,20 @@ function amountOfPages(summary){
   }
   return counter - 1
 }
+
+// or
+
+function amountOfPages(summary){
+  let res = 0;
+  
+  for (let i = 0; true; i++) {
+    if (summary > 0) {
+      summary -= 9 * Math.pow(10, i) * (i+1);
+      res += 9 * Math.pow(10, i);
+    } else {
+      res += summary / i;
+      break;
+    }
+  }
+  return res;
+}
