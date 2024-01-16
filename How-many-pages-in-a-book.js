@@ -13,3 +13,6 @@ Be aware that you'll get enormous books having up to 100.000 pages.
 
 All inputs will be valid.
 */
+
+
+// Solution
